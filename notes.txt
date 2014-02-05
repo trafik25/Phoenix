@@ -72,3 +72,12 @@ h3 {
   font-family: Vivaldi,Cursive;  
     
 }
+
+/*Div tags*/
+div {
+
+    background-color: #cc0000;
+    height: 100px;
+    width: 100px;
+
+}
