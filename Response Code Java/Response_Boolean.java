@@ -32,10 +32,10 @@ public class Response_code_TF {
 		try {
             int resp_code=  Request.Get(url).execute().returnResponse().getStatusLine()
                     .getStatusCode();
-            	if(resp_code == 200) {
-            	return true; }
+            	if(resp_code == 200) 
+            		return true; 
             	else 
-            	return false;
+            		return false;
 		
 		} catch (Exception e) {
             throw new RuntimeException(e);
