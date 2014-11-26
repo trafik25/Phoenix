@@ -14,6 +14,9 @@ public class Response_code_TF {
 	
 
 	public static void main(String[] args) {
+		System.out.println(checkResponse ("http://www.google.com"));
+		//list your sites you want to check here
+		//System.out.println(checkResponse ("http://www.gmail.com"));
 		
 		String url = "http://www.google.com";
 
@@ -32,13 +35,14 @@ public class Response_code_TF {
 		try {
             int resp_code=  Request.Get(url).execute().returnResponse().getStatusLine()
                     .getStatusCode();
+                    System.out.println(checkResponse ("Response code for URL" + url + "is ->" + resp_code));
             	if(resp_code == 200) 
             		return true; 
             	else 
             		return false;
 		
 		} catch (Exception e) {
-            throw new RuntimeException(e);
+			return false;
     
 	}
 		
