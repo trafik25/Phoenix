@@ -46,6 +46,12 @@ public class Explicit_Wait {
 		.pollingEvery(5, TimeUnit.SECONDS)
 		.ignoring(NoSuchElementException.class).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='listing_loader']/img")));
 		
+		//another way to write Fluentwait 
+		FluentWait<WebDriver> fwait = new FluentWait<WebDriver>(wd)
+				.withTimeout(30, TimeUnit.SECONDS)
+				.pollingEvery(5, TimeUnit.SECONDS);
+		
+		fwait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='listing_loader']/img")));
 		
 	}
 }
