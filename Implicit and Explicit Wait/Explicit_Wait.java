@@ -1,4 +1,6 @@
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,19 +27,24 @@ public class Explicit_Wait {
 		
 		
 		WebDriver wd = new FirefoxDriver();
-		WebDriverWait myElement = (new WebDriverWait(wd, 10));	
+		WebDriverWait wait = (new WebDriverWait(wd,10));	
 		wd.get("http://www.commonfloor.com/apartments-for-sale");
 		wd.findElement(By.xpath("//*[@id='sale_type_chzn']/a/span")).click();
 		wd.findElement(By.xpath(".//*[@id='sale_type_chzn_o_1']")).click();
 
 		//Wait for the Ajax element to appear 
-		Wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='listing_loader']/img")));
+		//Make sure to create a local "wait" variable above at line 30
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='listing_loader']/img")));
 		System.out.println("A");
 		//Wait for the Ajax element to disappear 
-		Wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='listing_loader']/img")));
+		
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(".//*[@id='listing_loader']/img")));
 		System.out.println("B");
 		
-		
+		new FluentWait<WebDriver>(wd)
+		.withTimeout(30, TimeUnit.SECONDS)
+		.pollingEvery(5, TimeUnit.SECONDS)
+		.ignoring(NoSuchElementException.class).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='listing_loader']/img")));
 		
 		
 	}
