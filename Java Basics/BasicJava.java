@@ -20,7 +20,7 @@ public class  FirstJava {
 	System.out.println(b);
 
 	
-	int y = 400;
+	int y = 300;
 	int x = 200;
 	if(y<x) {
 		System.out.println("x is the greatest" + x);
