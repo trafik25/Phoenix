@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 /*
- * Alerts start at line 45.
+ * 
  * 
  * 
  */
@@ -30,6 +30,7 @@ public class Managing_Alerts {
 		wd.findElement(By.xpath(".//*[@id='signin_info']/a[1]")).click();
 		wd.findElement(By.xpath(".//*[@id='btn_login']")).click();;
 		
+		//The Shadowbox appears....to control the shadowbox you must use Alerts since its not a popup
 		Alert al = wd.switchTo().alert();
 		System.out.println(al.getText());
 		al.accept(); //accept the alert 
