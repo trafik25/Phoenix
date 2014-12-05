@@ -21,27 +21,11 @@ public class WebTables {
 		System.out.println(rows.size());
 		 
 		//To extract all data from all the rows you would write
-		/*for(int i=0;i<rows.size();i++) {
+		for(int i=0;i<rows.size();i++) {
 			System.out.println(rows.get(i).getText());
 		}
-		 */
+	
 		
-		//Find the total # of columns 
-		// .//table[@class='dataTable']/tbody/tr[3]/td
-		List<WebElement> cols = wd.findElements(By.xpath(".//table[@class='dataTable']/tbody/tr[3]/td"));
-		System.out.println("Total Cols: " + cols.size());
-		
-		//Find the value of the 20th row .//table[@class='dataTable']/tbody/tr[20]
-		//Complete Column 1 .//table[@class='dataTable']/tbody/tr/td[1]
-		List<WebElement> compnames = wd.findElements(By.xpath(".//table[@class='dataTable']/tbody/tr/td[1]"));
-		List<WebElement> currentprice = wd.findElements(By.xpath(".//table[@class='dataTable']/tbody/tr/td[4]"));
-
-		
-		for(int i=0;i<compnames.size();i++) {
-			//Use the for Loop to print the values of the company name + its stock price
-			//since (i) is the same meaning the company matches the price in the table
-			System.out.println(compnames.get(i).getText() + "-----" + currentprice.get(i).getText()); 
-		}
 		
 		wd.quit();
 	}
