@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FindValue_WebTable {
+public class WebTable_FindValue {
 
 	public static void main(String[] args) {
 
