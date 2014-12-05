@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class WebTables {
+public class WebTables_Master {
 
 	public static void main(String[] args) {
 
