@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
-/* Mod 15 V 1  (18:48)
+/* 
  * Reference the Java docs here for the Actions class
  * http://selenium.googlecode.com/git/docs/api/java/index.html
  * 
