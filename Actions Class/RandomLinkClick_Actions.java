@@ -17,7 +17,7 @@ import org.openqa.selenium.interactions.Actions;
  *       fp.setEnableNativeEvents(true);
  */      
 
-public class RandomLinkClick {
+public class RandomLinkClick_Actions {
 	
 	
 	public static void main(String[] args) throws InterruptedException {
