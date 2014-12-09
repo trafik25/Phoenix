@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 
-public class Drop_Downs {
+public class Drop_Downs_usingXpath {
 
 	public static void main(String[] args) {
 
