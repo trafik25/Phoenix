@@ -32,7 +32,7 @@ public class Set_Java {
 		
 		//no index such as an array USA is not (0) UK is not (1)
 		//no duplicate values are allowed
-		//no order to the items printed
+		//no order to the items printed ok
  		
 		Set<String> mySet = new HashSet<String>();
 		mySet.add("USA");
