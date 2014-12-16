@@ -28,7 +28,7 @@ public class Declaring_Browser {
 		
 		
 		
-		//write, read and clear input fields
+		//write, read and clear input fields.
 		
 		/*
 		 * Commented out validating text fields code
