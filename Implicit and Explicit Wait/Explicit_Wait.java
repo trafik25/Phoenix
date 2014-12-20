@@ -20,7 +20,7 @@ public class Explicit_Wait {
 	/*
 	 * Typically you would use Explicit wait for Ajax sites
 	 * Explicit wait again is only for specific elements on the page
-	 * do not mix with implicit waits 
+	 * do not mix with implicit waits dude
 	 */
 	
 	public static void main(String[] args) throws InterruptedException {
