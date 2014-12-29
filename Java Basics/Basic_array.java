@@ -25,7 +25,7 @@ public class Arrays {
 		//different types of arrays
 		int i[] = new int[4];
 		i[0]= 232;
-		i[1]= 343;
+		i[1]= 353;
 		i[2]= 43;
 		i[3]= 1212;
 		
