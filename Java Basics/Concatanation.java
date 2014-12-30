@@ -6,7 +6,7 @@ public class Concatanation_Operator {
 
 		
 	String x = "Hello";
-	String y = "World";
+	String y = "thomas";
 	
 	int a =100;
 	int b =200;
