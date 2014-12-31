@@ -27,7 +27,7 @@ the title of the page where the link terminates.
 		String part1="//*[@id='most_popular_tabs_media']/ul/li[";
 		String part2="]/a";
 		
-		//define how many links are in the table or column i<=5 less than or = to 5?
+		//define how many link are in the table or column i<=5 less than or = to 5?
 		for(int i=1;i<=5;i++) { //Remove the For Loop to use boolean statement below
 		String text =	wd.findElement(By.xpath(part1+i+part2)).getText();
 		System.out.println(text);
