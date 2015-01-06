@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+//this test case moves the slider element to adjust price or size or number of items using the draganddropby function in the actions class
 
 public class UsingActions_Slider {
 
@@ -19,7 +20,7 @@ public class UsingActions_Slider {
 		
 		Actions act = new Actions(wd);
 
-		
+		//Moves slider on the price of an item -100 basis points
 		WebElement point = wd.findElement(By.xpath(".//*[@id='secondary']/div/div[2]/div[1]/div[1]/span[2]"));
 		act.dragAndDropBy(point, -100, 0).build().perform();;  //use x basis because no Y coordinate exist x= -100 y = 0
 		
