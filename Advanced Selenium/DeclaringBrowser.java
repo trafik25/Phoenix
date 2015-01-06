@@ -3,8 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 /*
- * validate text input fields
- * text on buttons and on objects
+ * This test case changes the browser on the fly instead of having to declare a new driver
+ * 
  * 
  */
 
