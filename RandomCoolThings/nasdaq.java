@@ -11,7 +11,7 @@ public class NYSEValues {
 
 	public static void main(String[] args) {
 
-		
+		//cool little Nasdaq test for nested table values
 		
 		//.//*[@id='mod-quotes-latest']
 		FirefoxDriver wd = new FirefoxDriver();
